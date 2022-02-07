@@ -21,3 +21,5 @@ Posee autenticación Oauth 2.0 de Google Auth y también cuenta con parametros O
 
 
 
+Por acá el link de documentación con postman de las apis:
+https://bold-escape-707955.postman.co/workspace/My-Workspace~682717e6-09b5-42d2-8a00-2474eae87593/documentation/8925996-41bd5082-e346-4e3d-9cfd-1fff988c9a45
