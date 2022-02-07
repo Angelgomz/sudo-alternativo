@@ -14,7 +14,13 @@ Posee autenticación Oauth 2.0 de Google Auth y también cuenta con parametros O
  Despues de asegurarse que la BBDD este creado y conectada a nuestro sistema, ejecutamos por consola (cmd) los siguientes comandos: </p>
 
  `` php artisan migrate 
- php artisan passport:install 
+ 
+ 
+ 
+ 
+ 
+ 
+  ``php artisan passport:install 
 
 
 
