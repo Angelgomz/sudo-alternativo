@@ -14,7 +14,9 @@ Posee autenticación Oauth 2.0 de Google Auth y también cuenta con parametros O
  Despues de asegurarse que la BBDD este creado y conectada a nuestro sistema, ejecutamos por consola (cmd) los siguientes comandos: </p>
 
  ` php artisan migrate ` 
+ <br>
  Vamos a nuestro gestor de bases de datos web y verificamos que las tablas de la bbdd esten creadas correctamente y proseguimos con el comando que instala el paquete de passport en nuestro proyecto
+ <br>
  ` php artisan passport:install` 
 
 
