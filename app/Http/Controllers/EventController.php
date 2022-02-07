@@ -38,7 +38,6 @@ class EventController extends Controller
 
     public function storeBd($items){
         foreach($items as $item){
-
             $ifExists = Evento::firstWhere('id_google',$item['id_google']);
             if(empty($ifExists)){
             $item['begin'] = strtotime($item['begin']); 

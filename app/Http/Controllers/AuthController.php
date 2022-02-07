@@ -74,7 +74,7 @@ class AuthController extends Controller
                 $client->fetchAccessTokenWithRefreshToken($client->getRefreshToken());
                 $gauth = new \Google_Service_Oauth2($client);
                 $email = $gauth->userinfo->get();
-                return view('home');
+                return redirect()->route('home');
             } else{
                 $authUrl = $client->createAuthUrl();
                 return view('layouts/login')->with('urlauth',$authUrl);
@@ -83,7 +83,7 @@ class AuthController extends Controller
         else{
             $gauth = new \Google_Service_Oauth2($client);
             $email = $gauth->userinfo->get();
-            return view('home');
+            return redirect()->route('home');
             }
         }
         else{
@@ -103,9 +103,13 @@ class AuthController extends Controller
                         mkdir(dirname($tokenPath), 0700, true);
                     }
                 file_put_contents($tokenPath, json_encode($client->getAccessToken()));
-                return view('home')->with('token',$refreshtoken);
+                return redirect()->route('home');
+               // return view('home')->with('token',$refreshtoken);
             }
         }
+    }
+    public function viewHome(){
+        return view('home');
     }
     public function signUp(Request $request)
     {

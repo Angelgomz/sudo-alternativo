@@ -57,4 +57,11 @@
                             </div>
                 </div>
         </div>
+<style type="text/css">
+    body{
+        background-image: url(https://image.freepik.com/free-vector/people-illustration-with-calendar-schedule_40677-12.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    }
+</style>
 @include ('layouts.footer')

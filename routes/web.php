@@ -14,6 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/','AuthController@index');
+Route::get('/home','AuthController@viewHome')->name('home');
 /*Route::get('/home','HomeController@getHome')->name('home'); */ 
 //crea y guarda un nuevo evento en la bdd.
 // Rutas de login 
