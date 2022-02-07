@@ -8,7 +8,10 @@ Posee autenticación Oauth 2.0 de Google Auth y también cuenta con parametros O
 
 
 ### Requerimientos de Instalacion: 
+ <p>En el archivo .env para la configuración se encuentran los datos relacionados a la bbdd, como el nombre de la bbdd, el usuario y las password. En este caso la bd se llama sudo_alternativo, también se encuentran las credenciales del proyecto creado con Google Developer. </p>
  
+ <p> Las variables directas del google project son GOOGLE_REDIRECT_URI (para auntenticar al usuario), GOOGLE_WEBHOOK_URI, GOOGLE_CALENDAR_AUTH_PROFILE (el tipo de autenticacion), GOOGLE_OAUTH_ID, GOOGLE_OAUTH_KEY, GOOGLE_REDIRECT Y Credentials (variables necesarias para conectar con google y ubicar el proyecto) </p> 
+
  <p>Para el el despliegue de este sistema, se necesita ejecutar las migraciones de la BBDD. Y también a su vez la implementación de el paquete de Laravel conocido como Passport. 
  Para el comienzo debemos conectar nuestro sistema a la BBDD en nuestra caso utilizamos MySQL a traves de PHPmyadmin. (El archivo .env proporcionado cuenta con los parametros necesarios).
  Despues de asegurarse que la BBDD este creado y conectada a nuestro sistema, ejecutamos por consola (cmd) los siguientes comandos: </p>
